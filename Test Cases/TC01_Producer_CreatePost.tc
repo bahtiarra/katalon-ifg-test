@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Producer_CreatePost</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7500e5d5-73d1-4085-b4ee-a8faa819d482</testCaseGuid>
+</TestCaseEntity>

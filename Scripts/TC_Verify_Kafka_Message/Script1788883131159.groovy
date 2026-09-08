@@ -17,11 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-request = WS.sendRequest(findTestObject('Object Repository/API-002'))
-WS.verifyResponseStatusCode(request, 200)
-String userId = WS.getElementPropertyValue(request, 'userId')
-String id = WS.getElementPropertyValue(request, 'id')
-String title = WS.getElementPropertyValue(request, 'title')
-String body = WS.getElementPropertyValue(request, 'body')
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.util.KeywordUtil
 
-println(userId + id + title + body)
+// 1. Definisikan parameter koneksi Kafka
+String bootstrapServer = "localhost:9092"
+String topicName = "tes-topik"
+String groupId = "katalon-test-group"
+
+// 2. panggil Custom Keyword untuk membaca pesan dari Kafka
+String receivedMessage = CustomKeywords.'kafka.KafkaConsumerHelper.consumeLatestMessage'(bootstrapServer, topicName, groupId)
+
+// 3. Log pesan yang berhasil ditangkap
+KeywordUtil.logInfo("Pesan yang diterima dari Kafka: " + receivedMessage)
+
+// 4. Lakukan Validasi (Assertion)
+assert receivedMessage.contains("Hello Kafka!") : "Pesan dari tidak Kafka sesuai!"

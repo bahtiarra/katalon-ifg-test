@@ -1,0 +1,42 @@
+2026-09-08 22:36:25.911 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: /Applications/Katalon Studio.app/Contents/Eclipse/configuration/org.eclipse.osgi/150/0/.cp/resources/logback/logback-execution.xml
+2026-09-08 22:36:25.912 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: /Users/bahtiar/git/katalon-ifg-test/Include/config/log.properties
+2026-09-08 22:36:26.101 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_001
+2026-09-08 22:36:26.124 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = TIAR
+2026-09-08 22:36:26.124 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = katalon-ifg-test
+2026-09-08 22:36:26.124 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = bahtiar - localhost
+2026-09-08 22:36:26.125 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2026-09-08 22:36:26.125 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2026-09-08 22:36:26.125 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.1.0
+2026-09-08 22:36:26.156 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-09-08 22:36:26.156 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC02_Consumer_GetPost
+2026-09-08 22:36:26.252 DEBUG testcase.TC02_Consumer_GetPost           - 1: request = sendRequest(findTestObject("Object Repository/API-002"))
+2026-09-08 22:36:26.620 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: /Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623/requests/main/API-002_0.har
+2026-09-08 22:36:26.621 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  'https://jsonplaceholder.typicode.com//posts/1'
+2026-09-08 22:36:26.640 DEBUG testcase.TC02_Consumer_GetPost           - 2: verifyResponseStatusCode(request, 200)
+2026-09-08 22:36:26.646 DEBUG testcase.TC02_Consumer_GetPost           - 3: userId = getElementPropertyValue(request, "userId")
+2026-09-08 22:36:26.666 DEBUG testcase.TC02_Consumer_GetPost           - 4: id = getElementPropertyValue(request, "id")
+2026-09-08 22:36:26.673 DEBUG testcase.TC02_Consumer_GetPost           - 5: title = getElementPropertyValue(request, "title")
+2026-09-08 22:36:26.679 DEBUG testcase.TC02_Consumer_GetPost           - 6: body = getElementPropertyValue(request, "body")
+2026-09-08 22:36:26.686 DEBUG testcase.TC02_Consumer_GetPost           - 7: println(userId + id + title + body)
+11sunt aut facere repellat provident occaecati excepturi optio reprehenderitquia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto
+2026-09-08 22:36:26.688 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC02_Consumer_GetPost
+2026-09-08 22:36:26.690 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-09-08 22:36:26.690 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC01_Producer_CreatePost
+2026-09-08 22:36:26.703 DEBUG testcase.TC01_Producer_CreatePost        - 1: request = sendRequest(findTestObject("Object Repository/API-001"))
+2026-09-08 22:36:26.982 INFO  c.k.k.core.webservice.common.HarLogger   - HAR: /Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623/requests/main/API-001_1.har
+2026-09-08 22:36:26.983 INFO  c.k.k.core.webservice.common.HarLogger   - cURL Command:
+curl \
+  --location \
+  --request POST \
+  'https://jsonplaceholder.typicode.com//posts'
+2026-09-08 22:36:26.988 DEBUG testcase.TC01_Producer_CreatePost        - 2: verifyResponseStatusCode(request, 201)
+2026-09-08 22:36:26.991 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC01_Producer_CreatePost
+2026-09-08 22:36:27.010 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-09-08 22:36:27.010 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_001
+2026-09-08 22:36:27.010 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

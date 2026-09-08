@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Consumer_GetPost</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20a11663-af35-4f1a-ba6b-2c5f2e1fa038</testCaseGuid>
+</TestCaseEntity>

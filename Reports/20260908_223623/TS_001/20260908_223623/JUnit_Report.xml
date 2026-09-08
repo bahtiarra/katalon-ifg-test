@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_001" time="0.872" tests="2" failures="0" errors="0">
+   <testsuite name="TS_001" tests="2" failures="0" errors="0" time="0.872" skipped="0" timestamp="2026-09-08T15:36:26.119Z" hostname="bahtiar - localhost" id="Test Suites/TS_001">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623"/>
+         <property name="logFiles" value="/Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623/execution0.log, /Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623/console0.log"/>
+         <property name="attachments" value=""/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="bahtiar - localhost"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="11.1.1.0"/>
+         <property name="userFullName" value="TIAR"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="projectName" value="katalon-ifg-test"/>
+      </properties>
+      <testcase name="Test Cases/TC02_Consumer_GetPost" time="0.532" classname="Test Cases/TC02_Consumer_GetPost" status="PASSED">
+         <system-out><![CDATA[08-09-2026T22:36:26 - [TEST_CASE][PASSED] - Test Cases/TC02_Consumer_GetPost: Test Cases/TC02_Consumer_GetPost
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("Object Repository/API-002")): Send request successfully
+
+08-09-2026T22:36:26 - [MESSAGE][INFO] - HAR: /Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623/requests/main/API-002_0.har
+
+08-09-2026T22:36:26 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  'https://jsonplaceholder.typicode.com//posts/1'
+
+08-09-2026T22:36:26 - [MESSAGE][PASSED] - Send request successfully
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(request, 200): Verify response status code successfully
+
+08-09-2026T22:36:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - userId = getElementPropertyValue(request, "userId"): null
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - id = getElementPropertyValue(request, "id"): null
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - title = getElementPropertyValue(request, "title"): null
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - body = getElementPropertyValue(request, "body"): null
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - println(userId + id + title + body): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC01_Producer_CreatePost" time="0.301" classname="Test Cases/TC01_Producer_CreatePost" status="PASSED">
+         <system-out><![CDATA[08-09-2026T22:36:26 - [TEST_CASE][PASSED] - Test Cases/TC01_Producer_CreatePost: Test Cases/TC01_Producer_CreatePost
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - request = sendRequest(findTestObject("Object Repository/API-001")): Send request successfully
+
+08-09-2026T22:36:26 - [MESSAGE][INFO] - HAR: /Users/bahtiar/git/katalon-ifg-test/Reports/20260908_223623/TS_001/20260908_223623/requests/main/API-001_1.har
+
+08-09-2026T22:36:26 - [MESSAGE][INFO] - cURL Command:
+curl \
+  --location \
+  --request POST \
+  'https://jsonplaceholder.typicode.com//posts'
+
+08-09-2026T22:36:26 - [MESSAGE][PASSED] - Send request successfully
+
+08-09-2026T22:36:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(request, 201): Verify response status code successfully
+
+08-09-2026T22:36:26 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[08-09-2026T22:36:26 - [TEST_SUITE][PASSED] - TS_001: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
