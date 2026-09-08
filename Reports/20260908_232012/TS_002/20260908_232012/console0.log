@@ -1,0 +1,23 @@
+2026-09-08 23:20:14.291 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: /Applications/Katalon Studio.app/Contents/Eclipse/configuration/org.eclipse.osgi/150/0/.cp/resources/logback/logback-execution.xml
+2026-09-08 23:20:14.292 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: /Users/bahtiar/git/katalon-ifg-test/Include/config/log.properties
+2026-09-08 23:20:14.487 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_002
+2026-09-08 23:20:14.512 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = TIAR
+2026-09-08 23:20:14.513 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = katalon-ifg-test
+2026-09-08 23:20:14.513 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = bahtiar - localhost
+2026-09-08 23:20:14.513 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Mac OS X 64bit
+2026-09-08 23:20:14.513 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 127.0.0.1
+2026-09-08 23:20:14.514 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.1.1.0
+2026-09-08 23:20:14.550 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-09-08 23:20:14.550 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_Verify_Kafka_Message
+2026-09-08 23:20:14.655 DEBUG testcase.TC_Verify_Kafka_Message         - 1: bootstrapServer = "localhost:9092"
+2026-09-08 23:20:14.656 DEBUG testcase.TC_Verify_Kafka_Message         - 2: topicName = "tes-topik"
+2026-09-08 23:20:14.657 DEBUG testcase.TC_Verify_Kafka_Message         - 3: groupId = "katalon-test-group"
+2026-09-08 23:20:14.657 DEBUG testcase.TC_Verify_Kafka_Message         - 4: receivedMessage = kafka.KafkaConsumerHelper.consumeLatestMessage(bootstrapServer, topicName, groupId)
+2026-09-08 23:20:18.558 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - kafka.KafkaConsumerHelper.consumeLatestMessage is PASSED
+2026-09-08 23:20:18.561 DEBUG testcase.TC_Verify_Kafka_Message         - 5: logInfo("Pesan yang diterima dari Kafka: " + receivedMessage)
+2026-09-08 23:20:18.568 INFO  com.kms.katalon.core.util.KeywordUtil    - Pesan yang diterima dari Kafka: Hello Kafka!
+2026-09-08 23:20:18.570 DEBUG testcase.TC_Verify_Kafka_Message         - 6: assert receivedMessage.contains("Hello Kafka!") : "Pesan dari tidak Kafka sesuai!"
+2026-09-08 23:20:18.577 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_Verify_Kafka_Message
+2026-09-08 23:20:18.597 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-09-08 23:20:18.597 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_002
+2026-09-08 23:20:18.597 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
